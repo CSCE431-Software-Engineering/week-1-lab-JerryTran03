@@ -1,0 +1,6 @@
+<h1>Delete Confirmation</h1>
+<p>Are you sure you want to delete the book "<%= @book.title %>"?</p>
+
+<%= button_to "Confirm Delete", @book, method: :delete %>
+<%= link_to "Cancel", @book %> |
+<%= link_to "Back to books", books_path %>
